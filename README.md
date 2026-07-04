@@ -23,10 +23,10 @@ Pure HTML/CSS/JS — no build tools. Served statically via GitHub Pages.
 
 ```bash
 python3 -m http.server 8080
-# Then open http://localhost:8080/formaticon-docs/
+# Then open http://localhost:8080
 ```
 
-Do not open HTML files directly via `file://` — root-relative paths (`/formaticon-docs/...`) require an HTTP server.
+Do not open HTML files directly via `file://` — root-relative paths (`...`) require an HTTP server.
 
 ## Deployment
 
@@ -38,7 +38,7 @@ In GitHub repo Settings → Pages, set Source to **GitHub Actions**.
 
 Replace placeholder `<div class="screenshot-placeholder">` elements with:
 ```html
-<img src="/formaticon-docs/img/screenshots/filename.png" alt="Description" onerror="this.style.display='none'">
+<img src="img/screenshots/filename.png" alt="Description" onerror="this.style.display='none'">
 ```
 
 Screenshots belong in `img/screenshots/`. See the placeholder comments in each HTML file for the expected filenames.
